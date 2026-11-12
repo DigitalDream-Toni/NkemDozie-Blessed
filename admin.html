@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="NkemDozie Blessed admin dashboard — manage your product catalog." />
+  <title>NkemDozie Blessed — Admin Dashboard</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/theme.js"></script>
+</head>
+
+<body class="page-admin auth-locked">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark"><i class="fa-solid fa-tag"></i></span>
+        <span class="brand-text">Nkem<span>Dozie</span></span>
+      </a>
+
+      <div class="header-actions">
+        <nav class="nav-links" aria-label="Main navigation">
+          <a class="nav-link" href="index.html" aria-label="Home">
+            <i class="fa-solid fa-house"></i><span>Home</span>
+          </a>
+          <a class="nav-link is-active" href="admin.html" aria-label="Admin dashboard">
+            <i class="fa-solid fa-gauge-high"></i><span>Admin</span>
+          </a>
+        </nav>
+
+        <button
+          class="theme-toggle"
+          type="button"
+          data-theme-toggle
+          aria-label="Toggle dark mode"
+          aria-pressed="false"
+          title="Toggle theme"
+        >
+          <i class="fa-solid fa-moon icon-moon" aria-hidden="true"></i>
+          <i class="fa-solid fa-sun icon-sun" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="admin-main">
+    <!-- ============ Password gate ============ -->
+    <section class="glass gate-card" id="adminGate" hidden>
+      <div class="gate-icon"><i class="fa-solid fa-lock"></i></div>
+      <h1>Admin access</h1>
+      <p>Enter the dashboard password to manage your product catalog.</p>
+
+      <form class="gate-form" id="gateForm" novalidate>
+        <label class="gate-field" for="gatePassword">
+          <span>Password</span>
+          <div class="input-shell gate-input">
+            <i class="fa-solid fa-key" aria-hidden="true"></i>
+            <input
+              id="gatePassword"
+              type="password"
+              placeholder="Enter password"
+              autocomplete="current-password"
+              required
+            />
+            <button
+              class="gate-reveal"
+              id="gateReveal"
+              type="button"
+              aria-label="Show password"
+            >
+              <i class="fa-solid fa-eye" aria-hidden="true"></i>
+            </button>
+          </div>
+        </label>
+
+        <p class="gate-error" id="gateError" role="alert" hidden></p>
+
+        <button class="btn btn-primary gate-submit" type="submit">
+          <i class="fa-solid fa-arrow-right-to-bracket" aria-hidden="true"></i>
+          <span>Unlock dashboard</span>
+        </button>
+      </form>
+
+      <p class="gate-note">
+        <i class="fa-solid fa-clock" aria-hidden="true"></i>
+        The dashboard locks again after 5 minutes of inactivity.
+      </p>
+    </section>
+
+    <section class="admin-head">
+      <div>
+        <span class="eyebrow"><i class="fa-solid fa-database"></i> Dashboard</span>
+        <h1>Product manager</h1>
+        <p class="hero-sub">
+          Add, edit and organise the products in your catalog. Everything is
+          saved in this browser.
+        </p>
+      </div>
+
+      <div class="glass stat-card">
+        <span class="stat-icon"><i class="fa-solid fa-boxes-stacked"></i></span>
+        <div class="stat-body">
+          <span class="stat-label">Total products</span>
+          <strong class="stat-value" id="totalCount">0</strong>
+        </div>
+      </div>
+    </section>
+
+    <div class="admin-grid">
+      <!-- ============ Add / Edit form ============ -->
+      <section class="glass panel form-panel">
+        <h2 class="panel-title">
+          <i class="fa-solid fa-square-plus" aria-hidden="true"></i>
+          <span id="formTitle">Add product</span>
+        </h2>
+        <p class="panel-sub">
+          Add a product with its price — it becomes searchable right away.
+        </p>
+
+        <form id="productForm" novalidate>
+          <input type="hidden" id="productId" />
+
+          <label class="field">
+            <span>Product name</span>
+            <input
+              id="productName"
+              type="text"
+              placeholder="e.g. Rice"
+              maxlength="80"
+              autocomplete="off"
+              required
+            />
+          </label>
+
+          <label class="field">
+            <span>Price (&#8358;)</span>
+            <input
+              id="productPrice"
+              type="number"
+              placeholder="e.g. 10000"
+              min="0"
+              step="0.01"
+              inputmode="decimal"
+              required
+            />
+          </label>
+
+          <div class="field">
+            <span>Product image</span>
+
+            <label class="upload" id="uploadBox" for="productImage">
+              <i class="fa-solid fa-cloud-arrow-up" aria-hidden="true"></i>
+              <span class="upload-text">Click to upload an image</span>
+              <span class="upload-hint">Optional &middot; JPG, PNG or WEBP &middot; compressed automatically</span>
+            </label>
+            <input id="productImage" class="sr-only" type="file" accept="image/*" />
+          </div>
+
+          <div class="preview" id="previewWrap" hidden>
+            <img id="previewImage" alt="Selected product image preview" />
+            <button
+              class="preview-remove"
+              id="removeImage"
+              type="button"
+              title="Remove image"
+              aria-label="Remove image"
+            >
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit" id="submitBtn">
+              <i class="fa-solid fa-plus" aria-hidden="true"></i>
+              <span>Add product</span>
+            </button>
+            <button class="btn btn-ghost" type="button" id="cancelEdit" hidden>
+              Cancel
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <!-- ============ Product table ============ -->
+      <section class="glass panel table-panel">
+        <div class="panel-head">
+          <h2 class="panel-title">
+            <i class="fa-solid fa-list-check" aria-hidden="true"></i>
+            Products
+            <span class="count-pill" id="countPill">0</span>
+          </h2>
+
+          <div class="panel-tools">
+            <div class="input-shell small">
+              <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+              <input
+                id="adminSearch"
+                type="search"
+                placeholder="Search products…"
+                autocomplete="off"
+                aria-label="Search products"
+              />
+            </div>
+
+            <select id="sortSelect" class="select" aria-label="Sort products">
+              <option value="newest">Newest first</option>
+              <option value="az">Name A–Z</option>
+              <option value="za">Name Z–A</option>
+              <option value="price-asc">Price: Low to High</option>
+              <option value="price-desc">Price: High to Low</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="table-wrap" id="tableWrap">
+          <table class="products-table">
+            <thead>
+              <tr>
+                <th scope="col">Product</th>
+                <th scope="col">Price</th>
+                <th scope="col" class="th-actions">Actions</th>
+              </tr>
+            </thead>
+            <tbody id="productRows"></tbody>
+          </table>
+        </div>
+
+        <div class="state-card empty-state" id="emptyState" hidden>
+          <div class="state-icon"><i class="fa-solid fa-box-open"></i></div>
+          <h3>No products yet</h3>
+          <p id="emptyStateText">
+            Add your first product using the form to start building your catalog.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <!-- ============ Import / Export ============ -->
+    <section class="glass panel data-panel">
+      <div class="data-copy">
+        <h2 class="panel-title">
+          <i class="fa-solid fa-file-code" aria-hidden="true"></i>
+          Backup &amp; restore
+        </h2>
+        <p class="panel-sub">
+          Export your catalog as <code>products.json</code>, or import a saved
+          file to restore your products.
+        </p>
+      </div>
+
+      <div class="data-actions">
+        <button class="btn btn-primary" type="button" id="exportBtn">
+          <i class="fa-solid fa-download" aria-hidden="true"></i>
+          <span>Export products.json</span>
+        </button>
+
+        <div class="import-group">
+          <select id="importMode" class="select" aria-label="Import mode">
+            <option value="merge">Merge with current</option>
+            <option value="replace">Replace all</option>
+          </select>
+
+          <button class="btn btn-ghost" type="button" id="importBtn">
+            <i class="fa-solid fa-upload" aria-hidden="true"></i>
+            <span>Import JSON</span>
+          </button>
+          <input id="importFile" type="file" accept="application/json,.json" hidden />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>
+      <span class="footer-line">&copy; <span data-year>2026</span> NkemDozie Blessed. All rights reserved.</span>
+      <span class="footer-dot">•</span>
+      <span class="footer-line">Digital Dream.</span>
+    </p>
+  </footer>
+
+  <!-- ============ Delete confirmation modal ============ -->
+  <div class="modal" id="deleteModal" hidden>
+    <div class="modal-backdrop" data-close-modal></div>
+    <div
+      class="modal-card glass"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="deleteTitle"
+    >
+      <div class="modal-icon"><i class="fa-solid fa-trash-can"></i></div>
+      <h2 id="deleteTitle">Delete product?</h2>
+      <p>
+        “<strong id="deleteName"></strong>” will be removed from your catalog.
+        This action cannot be undone.
+      </p>
+      <div class="modal-actions">
+        <button class="btn btn-ghost" type="button" data-close-modal>Cancel</button>
+        <button class="btn btn-danger" type="button" id="confirmDelete">
+          <i class="fa-solid fa-trash" aria-hidden="true"></i>
+          <span>Delete</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <script src="js/auth.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>

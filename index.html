@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="NkemDozie Blessed — search any product and see its price instantly." />
+  <title>NkemDozie Blessed</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/theme.js"></script>
+</head>
+
+<body class="page-home">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark"><i class="fa-solid fa-tag"></i></span>
+        <span class="brand-text">Nkem<span>Dozie</span></span>
+      </a>
+
+      <div class="header-actions">
+        <nav class="nav-links" aria-label="Main navigation">
+          <a class="nav-link is-active" href="index.html" aria-label="Home">
+            <i class="fa-solid fa-house"></i><span>Home</span>
+          </a>
+          <a class="nav-link" href="admin.html" aria-label="Admin dashboard">
+            <i class="fa-solid fa-gauge-high"></i><span>Admin</span>
+          </a>
+        </nav>
+
+        <button
+          class="theme-toggle"
+          type="button"
+          data-theme-toggle
+          aria-label="Toggle dark mode"
+          aria-pressed="false"
+          title="Toggle theme"
+        >
+          <i class="fa-solid fa-moon icon-moon" aria-hidden="true"></i>
+          <i class="fa-solid fa-sun icon-sun" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="home-main">
+    <section class="hero">
+      <span class="eyebrow"><i class="fa-solid fa-bolt"></i> Instant price lookup</span>
+
+      <h1>
+        Search any product.<br />
+        <span class="gradient-text">Know the price.</span>
+      </h1>
+
+      <p class="hero-sub">
+        Type a product name and get its price from your catalog —
+        no waiting, no page reloads.
+      </p>
+
+      <form class="glass search-card" id="searchForm" novalidate>
+        <label class="sr-only" for="searchInput">Product name</label>
+
+        <div class="search-row">
+          <div class="input-shell">
+            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+            <input
+              id="searchInput"
+              type="search"
+              placeholder="e.g. Rice, Beans, Cooking Oil…"
+              autocomplete="off"
+            />
+          </div>
+
+          <button class="btn btn-primary" type="submit">
+            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+            <span>Search</span>
+          </button>
+        </div>
+
+        <p class="search-meta" id="searchMeta">
+          <i class="fa-solid fa-circle-notch fa-spin" aria-hidden="true"></i>
+          Loading catalog…
+        </p>
+      </form>
+    </section>
+
+    <section class="results-section" aria-live="polite">
+      <p class="results-label" id="resultsLabel" hidden></p>
+
+      <div class="glass state-card" id="stateIdle">
+        <div class="state-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+        <h2>Start your search</h2>
+        <p>Enter a product name above to see its image and current price.</p>
+      </div>
+
+      <div class="glass state-card" id="stateLoading" hidden>
+        <div class="spinner" aria-hidden="true"></div>
+        <h2>Searching…</h2>
+        <p>Checking your catalog for the best match.</p>
+      </div>
+
+      <div class="glass state-card" id="stateEmpty" hidden>
+        <div class="state-icon"><i class="fa-solid fa-box-open"></i></div>
+        <h2>Your catalog is empty</h2>
+        <p>Add products in the admin dashboard and they will show up here.</p>
+        <a class="btn btn-ghost" href="admin.html">
+          <i class="fa-solid fa-plus"></i><span>Add products</span>
+        </a>
+      </div>
+
+      <div class="glass state-card" id="stateNotFound" hidden>
+        <div class="state-icon is-danger"><i class="fa-solid fa-triangle-exclamation"></i></div>
+        <h2>Product Not Found</h2>
+        <p>
+          No product matches <strong id="notFoundQuery"></strong>. Try another
+          name or check the admin dashboard.
+        </p>
+      </div>
+
+      <div class="results" id="results" hidden></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>
+      <span class="footer-line">&copy; <span data-year>2026</span> NkemDozie Blessed. All rights reserved.</span>
+      <span class="footer-dot">•</span>
+      <span class="footer-line">Digital Dream.</span>
+    </p>
+  </footer>
+
+  <script src="js/search.js"></script>
+</body>
+</html>
