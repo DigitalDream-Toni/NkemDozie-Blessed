@@ -8,6 +8,5 @@
     "name": "Beans",
     "price": "8500",
     "image": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23fff4ec'/%3E%3Ccircle cx='200' cy='128' r='62' fill='%23e0894f'/%3E%3Ctext x='200' y='240' font-family='Arial' font-size='34' text-anchor='middle' fill='%23223055'%3EBeans%3C/text%3E%3C/svg%3E"
-  },
-
+  }
 ]
