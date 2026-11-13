@@ -1,12 +1,812 @@
 [
   {
-    "name": "Rice",
-    "price": "10000",
-    "image": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23eef2fb'/%3E%3Ccircle cx='200' cy='128' r='62' fill='%236c8cff'/%3E%3Ctext x='200' y='240' font-family='Arial' font-size='34' text-anchor='middle' fill='%23223055'%3ERice%3C/text%3E%3C/svg%3E"
+    "name": "Tasty Cube Chicken Powdered 1kg",
+    "price": "6000",
+    "image": "assets/download.webp"
   },
   {
-    "name": "Beans",
-    "price": "8500",
-    "image": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23fff4ec'/%3E%3Ccircle cx='200' cy='128' r='62' fill='%23e0894f'/%3E%3Ctext x='200' y='240' font-family='Arial' font-size='34' text-anchor='middle' fill='%23223055'%3EBeans%3C/text%3E%3C/svg%3E"
+    "name": "Tasty Cube Chicken Powdered 250g",
+    "price": "2000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Tasty Cube Chicken Powdered 400g",
+    "price": "4500",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Maggi Chicken Powdered",
+    "price": "2000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Maggi Beef Powdered",
+    "price": "2000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Knorr Chicken Powdered",
+    "price": "2000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Knorr Beef",
+    "price": "2200",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Knorr Chicken",
+    "price": "2500",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Royco",
+    "price": "1500",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Terra Chicken Cube",
+    "price": "1800",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Terra Gold Cube",
+    "price": "1800",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Terra Crayfish Cube",
+    "price": "1800",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Star Maggi Cube",
+    "price": "1600",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Onga Cube Shrimps",
+    "price": "6000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Benny",
+    "price": "7000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Emma Coconut",
+    "price": "1200",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Native Coconut Spices (pkt)",
+    "price": "2000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Toothpick (pkt)",
+    "price": "1200",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Euroma Bayleaf 125g",
+    "price": "2000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "White Onions & Shallot",
+    "price": "3000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Euroma Bayleaf 50g",
+    "price": "1000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Maruico Bayleaf 125g",
+    "price": "2000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Nutmeg (pkt)",
+    "price": "8000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Salt 1kg",
+    "price": "500",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Salt 500g",
+    "price": "250",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Salt 250g",
+    "price": "150",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Ochra Chicken",
+    "price": "800",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Semas Butter",
+    "price": "1200",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Kings Butter",
+    "price": "1000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Sona 1kg Sachet",
+    "price": "2500",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Sona Roll",
+    "price": "800",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Gyma",
+    "price": "800",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Super Jollof Spice (Big)",
+    "price": "2000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Super Jollof Spice (Small)",
+    "price": "1000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Native Mix (Big)",
+    "price": "2000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Native Mix (Small)",
+    "price": "1000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Spaghetti",
+    "price": "1000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Moringa Seed",
+    "price": "1000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Golden Terra Oil",
+    "price": "30000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Sea Salt (Big Container)",
+    "price": "3000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Sea Salt (Small Container)",
+    "price": "1500",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Sesame Oil Big Amoys",
+    "price": "6000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Sesame Oil (Big – Amoy)",
+    "price": "5500",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Sesame Oil (Small)",
+    "price": "2000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Oyster (Small)",
+    "price": "1500",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Basmati Rice (5kg)",
+    "price": "23000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Dark Soy Sauce (Small)",
+    "price": "1500",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Dark Soy Sauce (Big)",
+    "price": "5000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Light Soy Sauce (Small)",
+    "price": "1500",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Light Soy Sauce (Big)",
+    "price": "5000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Sweet Chilli (Small)",
+    "price": "1300",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Oyster (Big)",
+    "price": "5500",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Powdered Turmeric (Big Plate)",
+    "price": "2000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Powdered Turmeric (Small Plate)",
+    "price": "1000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Powdered Ginger (Big Plate)",
+    "price": "2000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Powdered Ginger (Small Plate)",
+    "price": "1000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Pepper Soup Mix (Big Plate)",
+    "price": "2000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Pepper Soup Mix (Small Plate)",
+    "price": "1000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Almond Nut (Packet)",
+    "price": "5000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "White Vinegar (Bottle)",
+    "price": "1200",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Heinz Apple Cider Vinegar (Bottle)",
+    "price": "15000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Black Pepper (Ground)",
+    "price": "3500",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Sunflower Seed (Packet)",
+    "price": "4000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Sesame Seed (1 Packet)",
+    "price": "3000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Pumpkin Seed (1 Packet)",
+    "price": "4000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Servitte",
+    "price": "250",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Clove (Plate)",
+    "price": "2000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Chia Seed (Plate)",
+    "price": "2000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Flat Seed (Plate)",
+    "price": "2500",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Cinnamon Stick",
+    "price": "1000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Mi Una (Roll)",
+    "price": "1300",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Kitchen Glory Beef (Roll)",
+    "price": "1500",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Kitchen Glory Chicken (Roll)",
+    "price": "1500",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Gino Curry (Roll)",
+    "price": "600",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Super Delicious Oil (25 Litres)",
+    "price": "70000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Kings Oil (25 Litres)",
+    "price": "75000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Palm Oil (150cl)",
+    "price": "2500",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Fenugreek (Plate)",
+    "price": "5000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Baked Beans",
+    "price": "1500",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Sweet Corn",
+    "price": "1200",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Super Gold Tomatoes (Pot)",
+    "price": "5000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Ric-Giko Tomatoes (Pot)",
+    "price": "5000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Super Delicious (Pot)",
+    "price": "5000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Clappa Tomatoes (Pot)",
+    "price": "5500",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Soupy Tomatoes (Pot)",
+    "price": "6000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "St. Rita Tomatoes (Pot)",
+    "price": "10000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "St. Rita Round",
+    "price": "950",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "St. Rita Long",
+    "price": "1800",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Gino Long",
+    "price": "1200",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Super Gold Round",
+    "price": "700",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Fried Shallot (Biggest)",
+    "price": "6000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Fried Shallot (Bigger)",
+    "price": "2500",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Fried Shallot (Big)",
+    "price": "1500",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Sachet Fried Shallot",
+    "price": "800",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Tiger Curry (100g)",
+    "price": "1000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Tiger Thyme (50g)",
+    "price": "1000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Ama Wonda Thyme (50g)",
+    "price": "900",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Tiger Rosemary (250g)",
+    "price": "5000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Marvico Rosemary (250g)",
+    "price": "3000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Ama Wonda Curry (100g)",
+    "price": "900",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Ama Wonda Jollof",
+    "price": "800",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Badia",
+    "price": "8000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Badia Curry",
+    "price": "7000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Marvico Thyme (250g)",
+    "price": "3000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Sarama Chicken Seasoning",
+    "price": "800",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Kitchen Glory Beef",
+    "price": "1200",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Kitchen Glory Chicken",
+    "price": "1200",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Larsor Beef",
+    "price": "800",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Larsor Chicken",
+    "price": "900",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Larsor Fish",
+    "price": "800",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Spicity Stew & Jollof",
+    "price": "800",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "All Purpose Paramount",
+    "price": "1000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "All Purpose Ochra",
+    "price": "800",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Tasty in Chicken Seasoning",
+    "price": "800",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Mivina",
+    "price": "1000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Paramount Chicken",
+    "price": "800",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Super Delicious Chicken Seasoning",
+    "price": "800",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Ahubadia Shrimps",
+    "price": "800",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Onga Classic",
+    "price": "200",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Onga Stew",
+    "price": "200",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Super Delicacy Condensed Milk",
+    "price": "2500",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Heinz Ketchup",
+    "price": "7000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Laziz Tomatoes Ketchup",
+    "price": "2500",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Munro Corn Flour",
+    "price": "1800",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Rich Gold Corn Flour",
+    "price": "1200",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Morning Fresh",
+    "price": "3000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Mama Lemon",
+    "price": "2500",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Ajino moto (30g)",
+    "price": "2000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Ajino moto (100g)",
+    "price": "700",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Ducros Curry (Cup)",
+    "price": "800",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Ducros Curry (1kg)",
+    "price": "18000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Ducros Curry (250g)",
+    "price": "5000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Masala Curry (250g)",
+    "price": "2300",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Ama Wanda Curry (500g)",
+    "price": "4000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Supreme Curry",
+    "price": "6000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Gel Curry",
+    "price": "8000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Supreme Thyme",
+    "price": "6000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Onga Chicken Cube",
+    "price": "5000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Tasty Cube Chicken",
+    "price": "3500",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Tasty Cube Crayfish",
+    "price": "3000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Maggi Chicken Cube",
+    "price": "3500",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Golden Terra Oil (5 Litres)",
+    "price": "18000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Laziz Oil (5 Litres)",
+    "price": "18500",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Laziz Oil (3 Litres)",
+    "price": "13500",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Royal Sunflower Oil (5 Litres)",
+    "price": "25000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Laziz Premium Oil (5 Litres)",
+    "price": "19000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Olive Oil (Chinese, 5 Litres)",
+    "price": "35000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Real Fresh Olive Oil (4 Litres)",
+    "price": "45000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Royal Olive Oil (4 Litres)",
+    "price": "50000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Real Fresh Olive Oil (1 Litre)",
+    "price": "20000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Scudieri Olive Oil (2 Litres)",
+    "price": "35000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Whippy Mayonnaise (Big)",
+    "price": "2800",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Bama (Big)",
+    "price": "4500",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Bama (Medium)",
+    "price": "2500",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Bama (Small)",
+    "price": "1700",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Jago (Big)",
+    "price": "3000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Sunripe Green Peas (Big)",
+    "price": "2000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Sunripe Green Peas (Small)",
+    "price": "1300",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Mushroom",
+    "price": "1800",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Farrow's (Small)",
+    "price": "1800",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Hot Dog",
+    "price": "3000",
+    "image": "assets/download.webp"
+  },
+  {
+    "name": "Coconut Milk",
+    "price": "1800",
+    "image": "assets/download.webp"
   }
 ]
