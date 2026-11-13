@@ -1,6 +1,6 @@
 {
   "name": "NkemDozie Blessed",
-  "short_name": "NkemDozie",
+  "short_name": "NkemDozie Blessed",
   "description": "Search any product and see its price instantly.",
   "start_url": "./index.html",
   "scope": "./",
