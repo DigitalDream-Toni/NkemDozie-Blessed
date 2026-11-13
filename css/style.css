@@ -1845,3 +1845,37 @@ body.auth-locked .admin-main > :not(#adminGate) {
     scroll-behavior: auto !important;
   }
 }
+
+/* ---------- Install app button ---------- */
+
+.hero-install {
+  margin-top: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--input-border);
+  background: var(--glass);
+  color: var(--text);
+  font-family: inherit;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color var(--transition), border-color var(--transition),
+    transform var(--transition);
+}
+
+.hero-install:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  transform: translateY(-1px);
+}
+
+.hero-install[hidden] {
+  display: none;
+}
+
+.hero-install i {
+  font-size: 0.9rem;
+}
